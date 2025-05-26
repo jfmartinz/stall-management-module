@@ -1,4 +1,7 @@
 {
+  "web": {
+    "bundler": "metro"
+  },
   "expo": {
     "name": "stall-management-module",
     "slug": "stall-management-module",
@@ -24,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-  }
+    },
+    "plugins": ["expo-router"]
+  },
+  "scheme": "stall-management-module"
 }
