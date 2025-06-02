@@ -6,6 +6,8 @@ Stall management module designed to help administrators manage stalls, listings,
 
 The application is currently static. No backend and DB yet.
 
+
+Routes
 - `/` (index.js) - Login screen
 - `/admin_interface` - Main dashboard with map 
 - `/account_creation` - User account creation interface
