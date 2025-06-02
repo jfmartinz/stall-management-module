@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "expo-router";
 import {
   StyleSheet,
   Text,
@@ -9,7 +10,6 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Platform,
-  Modal,
 } from "react-native";
 
 export default function LoginPage() {
@@ -18,10 +18,11 @@ export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
 
   const handleLogin = () => {
-    console.log("Login attempted with:", { userType, username, password });
-    // Add authentication logic here
+    // console.log("Login attempted with:", { userType, username, password });
+    router.push("/admin_interface");
   };
 
   const dismissKeyboard = () => {
@@ -300,6 +301,6 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.4)", // Black with 50% opacity
+    backgroundColor: "rgba(0, 0, 0, 0.4 )", // Black with 50% opacity
   },
 });
